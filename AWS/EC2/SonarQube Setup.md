@@ -72,7 +72,7 @@ ls -ltr
 sudo su - sonaradmin
 
 # Navigate to binary directory
-cd /opt/sonarqube/bin/linux-x86-64/
+cd /opt/sonarqube-25.9.0.112764/bin/linux-x86-64/
 
 # Start SonarQube service
 ./sonar.sh start
