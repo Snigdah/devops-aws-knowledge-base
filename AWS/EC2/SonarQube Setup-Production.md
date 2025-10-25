@@ -32,7 +32,7 @@ newgrp docker
 docker --version
 ```
 
-## 2. SonarQube Configuration
+## 2. Docker-Compose Installation
 
 ```bash
 # Configure system limits
