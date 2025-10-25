@@ -29,13 +29,13 @@ javac -version
 cd /opt
 
 # Download SonarQube community edition
-sudo wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-10.7.0.96327.zip
+sudo wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-25.9.0.112764.zip
 
 # Unzip the downloaded package
-sudo unzip sonarqube-10.7.0.96327.zip
+sudo unzip sonarqube-25.9.0.112764.zip
 
 # Rename directory for simplicity
-cd sonarqube-10.7.0.96327
+cd sonarqube-25.9.0.112764
 ```
 
 ## 3. Create Dedicated User (Security Best Practice)
@@ -45,7 +45,7 @@ cd sonarqube-10.7.0.96327
 sudo useradd sonaradmin
 
 # Change ownership of SonarQube directory
-sudo chown -R sonaradmin:sonaradmin sonarqube-10.7.0.96327
+sudo chown -R sonaradmin:sonaradmin /opt/sonarqube-25.9.0.112764
 
 #Elasticsearch won't run as root
 ```
@@ -72,7 +72,7 @@ ls -ltr
 sudo su - sonaradmin
 
 # Navigate to binary directory
-cd /opt/sonarqube/bin/linux-x86-64/
+cd /opt/sonarqube-25.9.0.112764/bin/linux-x86-64/
 
 # Start SonarQube service
 ./sonar.sh start
