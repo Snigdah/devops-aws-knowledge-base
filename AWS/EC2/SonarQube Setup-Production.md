@@ -10,7 +10,7 @@ Java 11 or later
 
 Minimum 2GB RAM
 
-## 1. System Setup & Docker Installation
+## ⚙️ 1. System Setup & Docker Installation
 
 ```yaml
 # Update system
@@ -32,7 +32,7 @@ newgrp docker
 docker --version
 ```
 
-## 2. Docker-Compose Installation
+## 2. Configure System Limits & Install Docker Compose
 
 ```bash
 # Increase virtual memory mapping (required by SonarQube)
