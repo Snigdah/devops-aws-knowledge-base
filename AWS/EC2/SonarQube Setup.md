@@ -45,7 +45,7 @@ cd sonarqube-25.9.0.112764
 sudo useradd sonaradmin
 
 # Change ownership of SonarQube directory
-sudo chown -R sonaradmin:sonaradmin sonarqube-25.9.0.112764
+sudo chown -R sonaradmin:sonaradmin /opt/sonarqube-25.9.0.112764
 
 #Elasticsearch won't run as root
 ```
