@@ -35,15 +35,13 @@ docker --version
 ## 2. Docker-Compose Installation
 
 ```bash
-# Configure system limits
+# Increase virtual memory mapping (required by SonarQube)
 sudo sysctl -w vm.max_map_count=262144
 echo "vm.max_map_count=262144" | sudo tee -a /etc/sysctl.conf
 
-# Install Docker Compose
+# Install Docker Compose plugin (latest version)
 sudo mkdir -p /usr/libexec/docker/cli-plugins
-
 sudo curl -SL "https://github.com/docker/compose/releases/latest/download/docker-compose-linux-$(uname -m)" -o /usr/libexec/docker/cli-plugins/docker-compose
-
 sudo chmod +x /usr/libexec/docker/cli-plugins/docker-compose
 
 # Verify installation
