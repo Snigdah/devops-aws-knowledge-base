@@ -23,7 +23,7 @@ sudo dnf install docker -y
 sudo systemctl start docker
 sudo systemctl enable docker
 
-# Add user to docker group
+# Add ec2-user to Docker group (to run docker without sudo)
 sudo usermod -aG docker ec2-user
 newgrp docker
 
