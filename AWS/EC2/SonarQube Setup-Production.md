@@ -10,7 +10,7 @@ Java 11 or later
 
 Minimum 2GB RAM
 
-## ⚙️ 1. System Setup & Docker Installation
+## 1. System Setup & Docker Installation
 
 ```yaml
 # Update system
@@ -61,24 +61,9 @@ nano docker-compose.yml
 or
 
 vim docker-compose.yml
-
-# Check if file exists
-ls -la docker-compose.yml
-
-# View the file content to make sure it's correct
-cat docker-compose.yml
-
-# Start services
-docker compose up -d
-
-# Check status
-docker compose ps
-
-# View the logs (wait for "SonarQube is operational")
-docker compose logs -f sonarqube
 ```
 
-## 4. docker-compose.yml
+## 4. docker-compose.yml (copy & paste this content)
 
 ```bash
 version: "3.8"
@@ -130,4 +115,23 @@ volumes:
 networks:
   sonarnet:
     driver: bridge
+```
+
+## 5. Run SonarQube
+
+```bash
+# Check if file exists
+ls -la docker-compose.yml
+
+# View the file content to make sure it's correct
+cat docker-compose.yml
+
+# Start containers in detached mode
+docker compose up -d
+
+# Check running containers
+docker compose ps
+
+# Follow logs (wait until "SonarQube is operational" appears)
+docker compose logs -f sonarqube
 ```
