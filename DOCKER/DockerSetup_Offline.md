@@ -21,11 +21,11 @@ LOGO=ubuntu-logo
 https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/
 
 ## Required Packages
-- containerd.io_1.7.29-1~ubuntu.24.04~noble_amd64.deb
-- docker-ce-cli_29.2.1-1~ubuntu.24.04~noble_amd64.deb
-- docker-ce_29.2.1-1~ubuntu.24.04~noble_amd64.deb
-- docker-buildx-plugin_0.31.1-1~ubuntu.24.04~noble_amd64.deb
-- docker-compose-plugin_2.40.3-1~ubuntu.24.04~noble_amd64.deb
+- `containerd.io_1.7.29-1~ubuntu.24.04~noble_amd64.deb`
+- `docker-ce-cli_29.2.1-1~ubuntu.24.04~noble_amd64.deb`
+- `docker-ce_29.2.1-1~ubuntu.24.04~noble_amd64.deb`
+- `docker-buildx-plugin_0.31.1-1~ubuntu.24.04~noble_amd64.deb`
+- `docker-compose-plugin_2.40.3-1~ubuntu.24.04~noble_amd64.deb`
 
 ## Installation Steps
 
