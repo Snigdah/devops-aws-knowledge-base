@@ -25,7 +25,6 @@ across all microservices in the MicroCube platform.
    - [Step 7. Initialise Vault](#step-7-initialise-vault)
    - [Step 8. Unseal Vault](#step-8-unseal-vault)
    - [Step 9. Log in as root](#step-9-log-in-as-root)
-
 ---
 
 ## Overview
@@ -295,3 +294,11 @@ Sealed          false
 Storage Type    raft
 HA Enabled      true
 ```
+
+### Step 9. Log in as root
+
+```bash
+docker exec -it vault vault login
+```
+
+Paste the root token from Step 7.
